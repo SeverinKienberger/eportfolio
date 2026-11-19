@@ -15,6 +15,61 @@ body {
     justify-content: space-between;
 }
 
+h1 {
+    font-size: 5.9vw;
+}
+
+h2 {
+font-size: 3.0vh;
+}
+
+p {
+font-size: 4vmin;
+}
+
+a {
+    color: #fff;
+    font-size: 4vmin;
+    text-decoration:none
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+display: flex;
+border-radius: 0;
+border: solid #ffffff00 1px;
+color: #fff;
+font-family:'Courier New';
+font-size:4vmin;
+
+background-image: linear-gradient(to right,#ef3636,#f06449);
+
+text-align: left;
+padding: 7px 7px 5px 1rem;
+width: 7em;
+justify-content: space-between;
+transition: all 200ms;
+}
+
+#arrow {
+    margin-right: -10%;
+    transition: margin-right 200ms;
+}
+
+button:hover {
+    border: solid #fff 1px;
+    transition: all 200ms;
+    border-radius: 1px;
+}
+
+button:hover #arrow {
+    margin-right: -15%;
+    transition: margin-right 200ms;
+}
+
 .navigationContainer ul {
     list-style-type: none;
     display: flex;
@@ -25,7 +80,32 @@ body {
     margin: 0 1rem;
 }
 
+
 .landingPage {
     width: 100vw;
-    height: calc(100vh - 5rem);
+    height: 100vh;
+    margin-top: -5rem;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
 }
+
+.landingPage div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+    margin: 0 3rem;
+}
+
+.titleContainer {
+    padding-left: 3vw;
+}
+
+.titleContainer * {
+    margin: 0;
+}
+
