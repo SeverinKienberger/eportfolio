@@ -157,6 +157,7 @@ button:hover #arrow {
     left: 0;
     align-items: center;
     justify-content: center;
+    backdrop-filter: blur(20px);
 }
 
 .contactMe {
