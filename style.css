@@ -119,6 +119,9 @@ button:hover #arrow {
     margin: 0 1rem;
 }
 
+.navigationContainer li:hover {
+    text-decoration: underline;
+}
 
 .landingPage {
     width: 100vw;
