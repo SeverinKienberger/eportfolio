@@ -28,7 +28,7 @@
             <div class="titleContainer">
                 <H1 class="pageTitle">Severin Kienberger</H1>
                 <p class="desctription">Jr. Entwickler</p>
-                <button class="aboutMe">Über mich <i id="arrow" class="fa-solid fa-arrow-right-long"></i></button>
+                <button onclick="toggleContactMe()" class="aboutMeButton">Über mich <i id="arrow" class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <div class="socialsContainer">
                     <a target="_blank" href="https://www.linkedin.com/in/severin-kienberger-731bb72ab/">
@@ -44,7 +44,45 @@
         </div>
         <div class="certificates"></div>
         <div class="projects"></div>
-        <div class="contactMe"></div>
+
+        <script>
+            function toggleContactMe() {
+                popup = document.getElementById("contactMeContainer");
+                if(popup.style.display === "none") {
+                    popup.style.display = "flex";
+                }
+                else {
+                    popup.style.display = "none";
+                }
+            }
+        </script>
+
+        <div id="contactMeContainer">
+            <div class = contactMe>
+                <div class="aboutMe">
+                    <H2>Über Mich</H2>
+                    <p> Ich bin ein 19 Jahre alter Applikationsentwickler. Ich habe Freude an Logik und an strukturierten Aufgaben.
+                        Sowohl im Frontend, als auch im Backend arbeite ich gerne und ich bin sehr motiviert, neues zu lernen.
+                    </p>
+                </div>
+                <div class="contactForm">
+                    <div class="closeContactMe">
+                        <div class="closeContactMeHitbox" onclick="toggleContactMe()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="contactFormContentWhapper">
+                    <h2>Kontaktieren Sie mich</h2>
+                    <form action="">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <textarea name="message" placeholder="Nachricht"></textarea>
+                        <button type="submit">Senden</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
