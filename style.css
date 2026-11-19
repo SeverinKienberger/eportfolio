@@ -33,6 +33,10 @@ a {
     text-decoration:none
 }
 
+li {
+    font-size: 3vmin;
+}
+
 .pageTitle {
     border-right: solid .5rem #ffffff00;
     white-space: nowrap;
@@ -66,17 +70,19 @@ color: #fff;
 font-family:'Courier New';
 font-size:4vmin;
 
+width: 30%;
+
 background-image: linear-gradient(to right,#ef3636,#f06449);
 
 text-align: left;
-padding: 7px 7px 5px 1rem;
+padding: 7px 7px 5px 0.5em;
 width: 7em;
 justify-content: space-between;
 transition: all 200ms;
 }
 
 #arrow {
-    margin-right: -10%;
+    margin-right: calc(-5% - 12px);
     transition: margin-right 200ms;
 }
 
@@ -87,8 +93,21 @@ button:hover {
 }
 
 button:hover #arrow {
-    margin-right: -15%;
+    margin-right: calc(-6% - 15px);
     transition: margin-right 200ms;
+}
+
+.socialsContainer img {
+    width: 4vh;
+    height: 4vh;
+    opacity: 70%;
+    transition: opacity, margin 100ms;
+}
+
+.socialsContainer img:hover {
+    opacity: 100%;
+    transition: opacity, margin 100ms;
+    margin: -1px 0 0 -1px;
 }
 
 .navigationContainer ul {
