@@ -33,6 +33,24 @@ a {
     text-decoration:none
 }
 
+.pageTitle {
+    border-right: solid .5rem #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation:
+        cursor 1s step-end infinite,
+        typing 1.5s steps(18);
+}
+
+@keyframes cursor {
+    50% {border-color: transparent}
+}
+
+@keyframes typing {
+    from {width: 0};
+}
+
 a:hover {
     text-decoration: underline;
 }
