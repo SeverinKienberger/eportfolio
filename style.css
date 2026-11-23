@@ -482,37 +482,40 @@ form button {
 }
 
 .myCompetences {
+    display: flex;
     width: 100%;
     min-height: 100vh;
     background-color: #fff;
+    flex-wrap: wrap;
 }
 
-.myCompetences p {
+.competence {
+    margin: 2rem 5rem;
+    font-size: 3vmin;
     color: #0f1117;
 }
 
 .progressbarOuter {
     background-color: #1c202b;
-    padding: 2px;
-    width: 20%;
-    height: 2rem;
+    width: 25vw;
+    height: 0.5rem;
 }
 
 .progressbarInner {
-    background-color: #24d281;
+    /*background-image: linear-gradient(to right,#ef3636,#f06449);*/
     height: 100%;
 }
 
 /*Sorry w3scools 🙏*/
 
-#office {width: calc(100% / 10 * 8);}
+#docker {width: calc(100% / 10 * 5);}
 #git {width: calc(100% / 10 * 7);}
-#batch {width: calc(100% / 10 * 6);}
+#sql {width: calc(100% / 10 * 8);}
 #python {width: calc(100% / 10 * 7);}
 #htmlCssPhp {width: calc(100% / 10 * 8);}
 #java {width: calc(100% / 10 * 8);}
-#cSharp {width: calc(100% / 10 * 6);}
-#javaScript {width: calc(100% / 10 * 7);}
+#cSharp {width: calc(100% / 10 * 5);}
+#javaScript {width: calc(100% / 10 * 6);}
 #sapUi5 {width: calc(100% / 10 * 7);}
 #sapCap {width: calc(100% / 10 * 8);}
 
