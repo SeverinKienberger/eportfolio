@@ -366,29 +366,72 @@ form button {
     font-size: 5.0vh;
 }
 
-.projectOneImage {
+.projectOrientation {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+#projectleft {
+    justify-content: start;
+}
+
+#projectRight {
+    justify-content: end;
+}
+
+
+.projectContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(60% - 4em);
+    padding: 0 2em;
+}
+
+.projectImage {
     width: 60%;
+    margin: 0 10%;
     aspect-ratio: 16 / 11;
-    background-image: url('Images/Spesen-Dashboard.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-left: 10%;
 }
 
-.projectOne {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to right,#00000043,#1c202bde);
+#projectOneImage {
+    background-image: url('Images/Spesen-Dashboard.png');
+}
+
+#projectOneContainer {
     align-items: end;
-    justify-content: center;
+    background-image: linear-gradient(to right,#00000043,#1c202bde);
+}
+
+#projectOne {
+    align-items: end;
     text-align: right;
 }
 
-.projectOne * {
-    width: 90%;
+#projectTwoImage {
+    background-image: url('Images/Agi Learning Hub.png');
+}
+
+#projectTwoContainer {
+    align-items: start;
+    background-image: linear-gradient(to left,#00000043,#1c202bde);
+}
+
+#projectTwo {
+    align-items: start;
+    text-align: left;
 }
 
 .toGithubLink {

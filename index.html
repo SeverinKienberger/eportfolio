@@ -17,7 +17,7 @@
                         <a href=#ausbildung>Ausbildung</a>
                     </li>
                     <li>
-                        Projekte
+                        <a href=#projekte>Projekte</a>
                     </li>
                     <li onclick="toggleContactMe()">
                         Kontakt
@@ -105,16 +105,37 @@
                 </div>
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" id="projekte">
             <h2 class="certificatesHeader">Projekte</h2>
-            <div class="projectOneImage">
-                <div class="projectOne">
-                    <h2>Spesen-Dashboard</h2>
-                    <p>Tool zur Spesenübersicht im Rahmen der IPA</p>
-                    <a class="toGithubLink" target="_blank" href="https://github.com/SeverinKienberger/spesen-dashboard">
-                        <p>Github</p>
-                        <i id="arrow" class="fa-solid fa-arrow-right-long"></i>
-                    </a>
+
+
+            <div class="projectOrientation" id="projectleft">
+                <div class="projectImage" id="projectOneImage">
+                    <div class="projectContainer" id="projectOneContainer">
+                        <div class="project" id="projectOne">
+                            <h2>Spesen-Dashboard</h2>
+                            <p>Tool zur Spesenübersicht im Rahmen der IPA</p>
+                            <a class="toGithubLink" target="_blank" href="https://github.com/SeverinKienberger/spesen-dashboard">
+                                <p>Github</p>
+                                <i id="arrow" class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projectOrientation" id="projectRight">
+                <div class="projectImage" id="projectTwoImage">
+                    <div class="projectContainer" id="projectTwoContainer">
+                        <div class="project" id="projectTwo">
+                            <h2>Lernseite</h2>
+                            <p>Ein Grundgerüst für ein Lern-Tool mit Kursen und ausgewerteten Tests.</p>
+                            <a class="toGithubLink" target="_blank" href="https://github.com/SeverinKienberger/agi-learning-hub">
+                                <p>Github</p>
+                                <i id="arrow" class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
