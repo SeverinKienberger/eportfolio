@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Eportfolio Severin Kienberger</title>
     <script src="https://kit.fontawesome.com/3891c89296.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                     <li>
                         <a href=#kompetenzen>Kompetenzen</a>
                     </li>
-                    <li onclick="toggleContactMe()">
+                    <li id="contactLink" onclick="toggleContactMe()">
                         Kontakt
                     </li>
                 </ul>
@@ -30,7 +31,7 @@
         <div class="landingPage">
             <div class="titleContainer">
                 <H1 class="pageTitle">Severin Kienberger</H1>
-                <p class="desctription">Jr. Entwickler</p>
+                <p class="desctription">Junior Entwickler</p>
                 <button onclick="toggleContactMe()" class="aboutMeButton">Über mich <i id="arrow" class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <div class="socialsContainer">
@@ -49,11 +50,13 @@
         <script>
             function toggleContactMe() {
                 popup = document.getElementById("contactMeContainer");
-                if(popup.style.display === "none") {
+                if (popup.style.display === "none") {
                     popup.style.display = "flex";
+                    document.body.classList.add("no-scroll");
                 }
                 else {
                     popup.style.display = "none";
+                    document.body.classList.remove("no-scroll");
                 }
             }
         </script>
@@ -62,7 +65,7 @@
             <div class = contactMe>
                 <div class="aboutMe">
                     <H2>Über Mich</H2>
-                    <p> Ich bin ein 19 Jahre alter Applikationsentwickler. Ich habe Freude an Logik und an strukturierten Aufgaben.
+                    <p> Mein Name ist Severin Kienberger. Ich bin ein 19 Jahre alter Applikationsentwickler.</br>Ich habe Freude an Logik und an strukturierten Aufgaben.
                         Sowohl im Frontend, als auch im Backend arbeite ich gerne und ich bin sehr motiviert, neues zu lernen.
                     </p>
                 </div>
@@ -73,14 +76,14 @@
                         </div>
                     </div>
                     <div class="contactFormContentWhapper">
-                    <h2>Kontaktieren Sie mich</h2>
-                    <form action="">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Email">
-                        <textarea name="message" placeholder="Nachricht"></textarea>
-                        <button type="submit">Senden</button>
-                    </form>
-                </div>
+                        <h2>Kontaktieren Sie mich</h2>
+                        <form action="">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <textarea name="message" placeholder="Nachricht"></textarea>
+                            <button type="submit">Senden</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
